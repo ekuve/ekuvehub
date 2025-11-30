@@ -40,6 +40,7 @@ function Module.Execute(Hub_Script_ID)
         local success, message = checkKey(saved_key)
         if success then
             IsValidSavedKey = true
+            script_key = saved_key
             API.load_script()
             return
         end
